@@ -32,8 +32,8 @@ Usecases:text generation,summarization,translation,code,creating writing
 		 	   	       |
 		 	   --------------------
 		    Static 	    		Dynamic
-		      |				   |
-		A prompt is fixed      A prompt which includes user inputs
+		      |				       |
+    A prompt is fixed      A prompt which includes user inputs
 		  \                       /                   
 		    \                   /
 			  \               /
