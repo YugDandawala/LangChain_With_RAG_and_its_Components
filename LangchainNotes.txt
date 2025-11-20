@@ -29,16 +29,16 @@ Usecases:text generation,summarization,translation,code,creating writing
  Prompts:A query given to model
  Types of Models: 1.text based (most widely used)
  	   	    		   |
-		 	   	   |
+		 	   	       |
 		 	   --------------------
 		    Static 	    		Dynamic
 		      |				   |
 		A prompt is fixed      A prompt which includes user inputs
-		      \                    /                   
-		       \                  /
-			\                /
-			 \              /
-			  \            / 
+		  \                       /                   
+		    \                   /
+			  \               /
+			    \           /
+			      \       / 
 			 1.Single Messages
 			 2.List of Messages
  
@@ -63,10 +63,10 @@ Output Source :--- When we get some response from the LLM model it responds in t
 				  Structured   output data (can be solve by Output Parser)
 				  output
 				 /  |  \
-				/   |   \
-			       /    |    \
-	 		      /     |     \
-                      TypeDict   Pydantic  Json_Schema
+			   /    |    \
+			 /      |      \
+	 	   /        |        \
+    TypeDict   Pydantic  Json_Schema
 
 <---|--->
 OutPut Parser:Langchain helps to convert raw LLM output response into structured formats like JSON,CSV,pydantic models etc.
@@ -89,10 +89,10 @@ Chains : In LangChain, the chain is the main component and it allow us to create
 	          Chains are of three Types
 			  Chain   (All practices are done and available on files)
 			  / | \
-			 /  |  \
 			/   |   \
-		       /    |    \
-		Sequential  |   Conditional
+		  /     |     \
+		/       |       \
+ Sequential     |   Conditional
 			    |
 			    |
 			 Parallel
@@ -109,16 +109,16 @@ Runnables : Runnables in LangChain provide a structured and modular way to defin
 	     with the help of runnables which share some common functions because of which this pipelines were able to work.
 	     
 			     Runnable
-			     /      \
+			      /    \
 			    /        \
-			   /          \
-		 	  /            \
-		 Task Specific       Primitives
-		 		     |-- RunnableSequence (it can also be defined as LECL)
-		 		     |-- RunnableParallel
-		 		     |-- RunnablePassthrough (it returns the input as output)
-		 		     |-- RunnableLambda (converts a function into runnable)
-		 		     |-- RunnableBranch (Conditional Chains)
+			  /            \
+		 	/                \ 
+		Task Specific       Primitives
+				 		     |-- RunnableSequence (it can also be defined as LECL)
+				 		     |-- RunnableParallel
+				 		     |-- RunnablePassthrough (it returns the input as output)
+				 		     |-- RunnableLambda (converts a function into runnable)
+				 		     |-- RunnableBranch (Conditional Chains)
 
 <-- Task Specific : These are core langchain components that have been converted into runnables so they can be used in piplines
                   --- Example : PrompTemplate,Invoke,Retriver,Parser etc
@@ -145,16 +145,16 @@ RAG based techniques : RAG (Retrievel Augmented Generation)--> RAG is a way to m
                    
 			  Text Splitters
 			  /   |   |   \
-			 /    |   |    \
 			/     |   |     \
-		       /      |   |      \
-		 Length       |   |       Semantic Meaning based   
-		 Basesd       |   |
+		  /       |   |       \
+		/         |   |         \
+	Length        |   |       Semantic Meaning based   
+	Basesd        |   |
 		 	     /     \
-		 	    /       \
-		       Text        Document 
-		     structure     structure 
-		     based          based
+		 	   /         \
+		    Text        Document 
+		    structure     structure 
+		    based          based
 		     
 ** 3.Vector Stores : A vector store is a database designed to store high-dimensional vectors (embeddings) instead of regular text or numbers.
 
