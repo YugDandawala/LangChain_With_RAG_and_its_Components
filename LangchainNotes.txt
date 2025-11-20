@@ -1,7 +1,7 @@
 <---|--->
 Models:It is a type of interface to interact with different types of AI models 
 Types of Models : 1.Language model :input text -->LLM--> text
- 	 	  2.Embedded model :input text --> vectors 	
+ 	 	          2.Embedded model :input text --> vectors 	
  	 	  
 1.Language model
 
