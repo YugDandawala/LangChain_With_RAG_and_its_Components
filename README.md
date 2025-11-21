@@ -88,7 +88,7 @@ for building real-world LangChain & RAG systems from scratch.
 
 <hr>
 
-<h2 id="output-source">📤 Output Source & Output Parsing — Instruction Guide</h2>
+<h2 id="output-source">📤 Output Source & Structured Output — Instruction Guide</h2>
 
 <h3>1️⃣ LLM Output Types</h3>
 <p>
